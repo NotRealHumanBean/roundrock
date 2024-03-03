@@ -1,0 +1,106 @@
+.head {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(18, 54, 22, 0.60) 0%, rgba(39, 123, 47, 0.00) 100%), url('../img/grass01.png'), lightgray 50% / cover no-repeat;
+    padding-bottom: 39px;
+    &__container {
+        margin: 0 auto;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (max-width: 479px) { 
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+    &__title {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    &__strange-thing {
+        width: 374px;
+        height: 64px;
+        @media (max-width: 479px) { 
+            width: 325px;
+        }
+        border-radius: 59px;
+        background: rgba(0, 0, 0, 0.50);
+        color: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+    &__big-text {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.50);
+        font-size: 144px;
+        font-weight: 900;
+        line-height: 134.5px; /* 93.403% */
+        margin-top: 17px;
+        @media (max-width: 479px) {
+            font-size: 100px;
+            line-height: 120.5px;
+        }
+    }
+    &__button {
+         margin-top: 39px;
+    }
+}
+.title {
+    display: flex;
+    align-items: center;
+    &__logo {
+        margin-right: 20px;
+    }
+    &__text {
+        color: #FFF;
+        font-weight: 800;
+        .bigger {
+            //font-size: 4.286rem;
+            font-size: 60px;
+            line-height: 118.5%; /* 71.1px */
+            @media (max-width: 479px) {
+                font-size: 40px;
+            }
+        }
+        .smaller {
+            font-size: 27px;
+            line-height: 118.5%;
+            letter-spacing: 7.02px;
+            @media (max-width: 479px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.logo {
+    width: 78px !important;
+    height: 84px !important;
+    position: relative !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.universal-button {
+    width: 180px;
+    height: 70px;
+    border-radius: 35px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #F9F9F9 100%);
+    box-shadow: 0px 10px 50px 0px rgba(16, 51, 30, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #48924F;
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -1,0 +1,46 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        margin-bottom: 50px;
+        position: relative;
+    }
+    &__title::after {
+        content: url('../img/services/04.svg');
+        position: absolute;
+        top: 50px;
+        right: -65px;
+        transform: rotate(-3.6deg);
+        @media(max-width: 479px) {
+            right: -30px;
+        }
+    }
+    &__content {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__gallery {
+        margin-top: 154px;
+        padding: 0 -30px;
+    }
+    &__card {
+        margin: 0 30px;
+    }
+    &__text {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 133.333%; /* 133.333% */
+    }
+}
+.about__button {
+    margin-top: 50px;
+}
