@@ -4,7 +4,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  @media(min-width: 479px) {
+    min-height: 100vh;
+  }
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 54, 22, 0.6)), to(rgba(39, 123, 47, 0))), url("../img/grass01.png"), lightgray 50%/cover no-repeat;
   background: -webkit-linear-gradient(top, rgba(18, 54, 22, 0.6) 0%, rgba(39, 123, 47, 0) 100%), url("../img/grass01.png"), lightgray 50%/cover no-repeat;
   background: -o-linear-gradient(top, rgba(18, 54, 22, 0.6) 0%, rgba(39, 123, 47, 0) 100%), url("../img/grass01.png"), lightgray 50%/cover no-repeat;
